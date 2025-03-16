@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="26.611" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-16T15:46:02.475439800Z">
+<testcase classname="Login page feature" name="Login page title" time="4.254">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user gets the title of the login page..................................passed
+Then Login page title should be "SourceForge.net: Log In to SourceForge.net".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page feature" name="Forgot Password link" time="5.194">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+Then forgot your password link should be displayed..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login page feature" name="Login with correct credentials" time="16.923">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user enters username "ssaisrinivas22@gmail.com"........................passed
+And user enters password "$Ss9704312287"....................................passed
+And user clicks on Login button.............................................passed
+Then user gets the title of the account page................................passed
+And Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge".passed
+]]></system-out>
+</testcase>
+</testsuite>
