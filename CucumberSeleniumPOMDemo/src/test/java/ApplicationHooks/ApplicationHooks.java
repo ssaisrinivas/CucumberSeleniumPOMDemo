@@ -43,10 +43,10 @@ public class ApplicationHooks {
     public void tearDown(Scenario sc) {
 	if (sc.isFailed()) {
 	    // take screenshot:
-	    String screenshotName = sc.getName().replaceAll("", "_");
+	    String screenshotName = sc.getName().replaceAll(" ", "_");
 	    TakesScreenshot take = ((TakesScreenshot) driver);
 	    byte[] sourcePath = take.getScreenshotAs(OutputType.BYTES);
-	    sc.attach(sourcePath, "images/png", screenshotName);
+	    sc.attach(sourcePath, "image/jpeg", screenshotName);
 
 	}
 

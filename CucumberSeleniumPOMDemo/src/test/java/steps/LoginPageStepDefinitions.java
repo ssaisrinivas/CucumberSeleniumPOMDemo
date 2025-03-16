@@ -60,7 +60,7 @@ public class LoginPageStepDefinitions {
 
     @Then("user gets the title of the account page")
     public void user_gets_the_title_of_the_account_page() throws InterruptedException {
-	// Thread.sleep(2000);
+	Thread.sleep(2000);
 	System.out.println("Login Page Title is :  " + lp.getloginPageTitle());
     }
 
