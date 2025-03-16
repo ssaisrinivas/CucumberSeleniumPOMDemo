@@ -46,7 +46,7 @@ public class ApplicationHooks {
 	    String screenshotName = sc.getName().replaceAll("", "_");
 	    TakesScreenshot take = ((TakesScreenshot) driver);
 	    byte[] sourcePath = take.getScreenshotAs(OutputType.BYTES);
-	    sc.attach(sourcePath, "image/png", screenshotName);
+	    sc.attach(sourcePath, "images/png", screenshotName);
 
 	}
 

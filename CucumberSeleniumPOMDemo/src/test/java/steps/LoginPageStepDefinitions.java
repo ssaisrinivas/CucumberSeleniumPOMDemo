@@ -27,6 +27,7 @@ public class LoginPageStepDefinitions {
     @Then("Login page title should be {string}")
     public void Login_page_title_should_be(String actualTitle) throws InterruptedException {
 	String expectedTitel = lp.getloginPageTitle();
+	System.out.println(expectedTitel);
 	Assert.assertEquals(expectedTitel, actualTitle);
     }
 
@@ -41,15 +42,15 @@ public class LoginPageStepDefinitions {
     }
 
     @When("user enters username {string}")
-    public void user_enters_username(String string) throws InterruptedException {
+    public void user_enters_username(String username) throws InterruptedException {
 
-	Thread.sleep(2000);
-	lp.enterUserName("ssaisrinivas22");
+	// Thread.sleep(2000);
+	lp.enterUserName(username);
     }
 
     @When("user enters password {string}")
-    public void user_enters_password(String string) throws InterruptedException {
-	lp.enterPassword("$Ss9704312287");
+    public void user_enters_password(String password) throws InterruptedException {
+	lp.enterPassword(password);
     }
 
     @When("user clicks on Login button")
@@ -59,7 +60,7 @@ public class LoginPageStepDefinitions {
 
     @Then("user gets the title of the account page")
     public void user_gets_the_title_of_the_account_page() throws InterruptedException {
-	Thread.sleep(2000);
+	// Thread.sleep(2000);
 	System.out.println("Login Page Title is :  " + lp.getloginPageTitle());
     }
 

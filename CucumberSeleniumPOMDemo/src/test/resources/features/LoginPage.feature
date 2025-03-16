@@ -13,7 +13,7 @@ Then forgot your password link should be displayed
 
 Scenario: Login with correct credentials
 Given user is on login page
-When user enters username "ssaisrinivas22@gmail.com"
+When user enters username "ssaisrinivas22"
 And user enters password "$Ss9704312287"
 And user clicks on Login button
 Then user gets the title of the account page
