@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="19.752" tests="3" skipped="0" failures="1" errors="0" timestamp="2025-03-16T16:54:17.326140800Z">
-<testcase classname="Login page feature" name="Login page title" time="4.77">
+<testsuite name="Cucumber" time="19.471" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-03-16T19:23:56.753771Z">
+<testcase classname="Account Page Feature" name="Accounts page title" time="10.879">
 <system-out><![CDATA[
-Given user is on login page.................................................passed
-When user gets the title of the login page..................................passed
-Then Login page title should be "SourceForge.net: Log In to SourceForge.net".passed
+Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+When user gets the title of the account page................................passed
+Then page title should be "ssaisrinivas22 / Preferences"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login page feature" name="Forgot Password link" time="4.37">
+<testcase classname="Account Page Feature" name="Accounts section count" time="8.371">
 <system-out><![CDATA[
-Given user is on login page.................................................passed
-Then forgot your password link should be displayed..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Login with correct credentials" time="10.386">
-<failure type="org.junit.ComparisonFailure" message="expected:&lt;[SourceForge.net: Log In to SourceForge.net]&gt; but was:&lt;[Compare B2B Software, Download, &amp; Develop Open Source &amp; Business Software - SourceForge]&gt;">
-<![CDATA[org.junit.ComparisonFailure: expected:<[SourceForge.net: Log In to SourceForge.net]> but was:<[Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at steps.LoginPageStepDefinitions.Account_page_title_should_be(LoginPageStepDefinitions.java:70)
-	at ✽.Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge"(file:///C:/Users/ssais/git/CucumberSeleniumPOMDemo/CucumberSeleniumPOMDemo/src/test/resources/features/LoginPage.feature:20)
-]]>
-</failure>
-<system-out><![CDATA[
-Given user is on login page.................................................passed
-When user enters username "ssaisrinivas2"...................................passed
-And user enters password "$Ss9704312287"....................................passed
-And user clicks on Login button.............................................passed
-Then user gets the title of the account page................................passed
-And Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge".failed
+Given user has already logged in to application.............................passed
+Given user is on Accounts page..............................................passed
+Then user gets accounts section.............................................passed
+And accounts section count should be 7......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

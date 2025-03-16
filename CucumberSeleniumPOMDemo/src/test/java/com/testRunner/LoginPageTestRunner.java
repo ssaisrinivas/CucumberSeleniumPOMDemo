@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {
-	"C:\\Users\\ssais\\git\\CucumberSeleniumPOMDemo\\CucumberSeleniumPOMDemo\\src\\test\\resources\\features\\LoginPage.feature" }, glue = {
+	"C:\\Users\\ssais\\git\\CucumberSeleniumPOMDemo\\CucumberSeleniumPOMDemo\\src\\test\\resources\\features\\LoginPage.feature",
+	"C:\\Users\\ssais\\git\\CucumberSeleniumPOMDemo\\CucumberSeleniumPOMDemo\\src\\test\\resources\\features\\AccountsPage.feature" }, glue = {
 		"steps", "ApplicationHooks" },
 
 	plugin = { "pretty", "html:testOutputs/test-outputs.html", "json:testOutputs/test-outputs.json",
