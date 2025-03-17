@@ -12,7 +12,7 @@ public class ConfigReader {
 
 	prop = new Properties();
 	try (FileInputStream ip = new FileInputStream(
-		"D:\\Eclipse-23-24\\CucumberSeleniumPOMDemo\\src\\test\\resources\\config\\config.properties")) {
+		"C:\\Users\\ssais\\git\\CucumberSeleniumPOMDemo\\CucumberSeleniumPOMDemo\\src\\test\\resources\\config\\config.properties")) {
 	    prop.load(ip);
 	} catch (IOException e) {
 	    // TODO Auto-generated catch block
