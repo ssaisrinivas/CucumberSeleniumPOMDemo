@@ -5,13 +5,11 @@ Feature: Account Page Feature
       | username       | password      |
       | ssaisrinivas22 | $Ss9704312287 |
 
-  @accounts
   Scenario: Accounts page title
     Given user is on Accounts page
     When user gets the title of the account page
     Then page title should be "ssaisrinivas22 / Preferences"
 
-  @accounts
   Scenario: Accounts section count
     Given user is on Accounts page
     Then user gets accounts section

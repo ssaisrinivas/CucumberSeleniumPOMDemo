@@ -30,7 +30,7 @@
 					<testFailureIgnore>true</testFailureIgnore>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -40,19 +40,26 @@
 					<target>17</target>
 				</configuration>
 			</plugin>
-			
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-failsafe-plugin</artifactId> 
-				<version>3.0.0-M3</version> <executions> <execution> <goals> <goal>integration-test</goal> 
-				</goals> <configuration> UNCOMMENT - To add any exclusions if required <excludes> 
+
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-failsafe-plugin</artifactId> 
+				<version>3.0.0-M3</version> <executions> <execution> <goals>
+			<goal>integration-test</goal> 
+				</goals> <configuration> UNCOMMENT - To add any exclusions if required
+			<excludes> 
 				<exclude>**/*IT*.java</exclude> </excludes> <includes> UNCOMMENT BELOW LINE 
-				- To execute feature files with a single runner <include>**/MyTestRunner.java</include> 
-				UNCOMMENT BELOW LINE - To execute feature files with multiple runners <include>**/*Runner.java</include> 
+				- To execute feature files with a single runner
+			<include>**/MyTestRunner.java</include> 
+				UNCOMMENT BELOW LINE - To execute feature files with multiple runners
+			<include>**/*Runner.java</include> 
 				</includes> UNCOMMENT BELOW 3 LINES - To execute using parallel or combination 
-				option <parallel>methods</parallel> <threadCount>4</threadCount> <perCoreThreadCount>true</perCoreThreadCount> 
+				option <parallel>methods</parallel> <threadCount>4</threadCount>
+			<perCoreThreadCount>true</perCoreThreadCount> 
 				UNCOMMENT BELOW 3 LINES - To execute using forking or combination option 
-				<forkCount>2</forkCount> <reuseForks>true</reuseForks> <reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> 
+				<forkCount>2</forkCount> <reuseForks>true</reuseForks>
+			<reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> 
 				</configuration> </execution> </executions> </plugin> -->
-			
+
 
 		</plugins>
 	</build>
@@ -193,7 +200,7 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-		
+
 		<!--
 		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 		<dependency>
@@ -209,6 +216,13 @@
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.14.0</version>
 			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>5.1.2</version>
 		</dependency>
 
 

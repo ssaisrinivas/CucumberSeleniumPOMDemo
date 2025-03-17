@@ -41,15 +41,9 @@ public class LoginPageStepDefinitions {
 	}
     }
 
-    @When("user enters username {string}")
-    public void user_enters_username(String username) throws InterruptedException {
-
-	// Thread.sleep(2000);
+    @When("user enters username {string} and password {string}")
+    public void user_enters_username_and_password(String username, String password) {
 	lp.enterUserName(username);
-    }
-
-    @When("user enters password {string}")
-    public void user_enters_password(String password) throws InterruptedException {
 	lp.enterPassword(password);
     }
 

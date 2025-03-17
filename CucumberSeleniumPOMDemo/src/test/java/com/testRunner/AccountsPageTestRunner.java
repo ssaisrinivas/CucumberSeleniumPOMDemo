@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		"steps", "ApplicationHooks" },
 
 	plugin = { "pretty", "html:testOutputs/test-outputs.html", "json:testOutputs/test-outputs.json",
-		"junit:testOutputs/test-outputs.xml" }, monochrome = true, dryRun = false)
+		"junit:testOutputs/test-outputs.xml",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, monochrome = true, dryRun = false)
 //, tags = "@sanity"
 public class AccountsPageTestRunner {
 
