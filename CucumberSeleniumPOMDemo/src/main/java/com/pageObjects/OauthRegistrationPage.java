@@ -57,4 +57,10 @@ public class OauthRegistrationPage {
 	driver.findElement(deleteOauth).click();
 	driver.switchTo().alert().accept();
     }
+
+    public boolean getPageSourceValue() {
+
+	return driver.getPageSource().contains("Sai Srinivas Git ");
+    }
+
 }

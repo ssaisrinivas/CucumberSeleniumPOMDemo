@@ -1,58 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="29.629" tests="6" skipped="0" failures="1" errors="0" timestamp="2025-03-17T08:43:41.291498900Z">
-<testcase classname="Account Page Feature" name="Accounts page title" time="16.453">
-<system-out><![CDATA[
-Given user has already logged in to application.............................passed
-Given user is on Accounts page..............................................passed
-When user gets the title of the account page................................passed
-Then page title should be "ssaisrinivas22 / Preferences"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Login page title" time="6.422">
-<system-out><![CDATA[
-Given user is on login page.................................................passed
-When user gets the title of the login page..................................passed
-Then Login page title should be "SourceForge.net: Log In to SourceForge.net".passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Forgot Password link" time="5.497">
-<system-out><![CDATA[
-Given user is on login page.................................................passed
-Then forgot your password link should be displayed..........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Login with correct credentials - #1.1" time="10.289">
-<system-out><![CDATA[
-Given user is on login page.................................................passed
-When user enters username "ssaisrinivas22" and password "$Ss9704312287".....passed
-And user clicks on Login button.............................................passed
-Then user gets the title of the account page................................passed
-And Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge".passed
-]]></system-out>
-</testcase>
-<testcase classname="Account Page Feature" name="Accounts section count" time="9.4">
-<system-out><![CDATA[
-Given user has already logged in to application.............................passed
-Given user is on Accounts page..............................................passed
-Then user gets accounts section.............................................passed
-And accounts section count should be 7......................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Login page feature" name="Login with correct credentials - #1.2" time="6.971">
-<failure type="org.junit.ComparisonFailure" message="expected:&lt;[SourceForge.net: Log In to SourceForge.net]&gt; but was:&lt;[Compare B2B Software, Download, &amp; Develop Open Source &amp; Business Software - SourceForge]&gt;">
-<![CDATA[org.junit.ComparisonFailure: expected:<[SourceForge.net: Log In to SourceForge.net]> but was:<[Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at steps.LoginPageStepDefinitions.Account_page_title_should_be(LoginPageStepDefinitions.java:64)
-	at ✽.Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge"(file:///C:/Users/ssais/git/CucumberSeleniumPOMDemo/CucumberSeleniumPOMDemo/src/test/resources/features/LoginPage.feature:17)
+<testsuite name="Cucumber" time="28.43" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-03-17T13:44:36.530675300Z">
+<testcase classname="Register New OAuth2 Application Feature" name="Register New OAuth2 scenario with different set of data - #1.1" time="15.475">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='application_name'][@tabindex='6']&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6f82cc5f0bcf0dc55d8918857c2fb3b, findElement {using=xpath, value=//input[@name='application_name'][@tabindex='6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49364/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6f82cc5f0bcf0dc55d8918857c2fb3b">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='application_name'][@tabindex='6']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6f82cc5f0bcf0dc55d8918857c2fb3b, findElement {using=xpath, value=//input[@name='application_name'][@tabindex='6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49364}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49364/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6f82cc5f0bcf0dc55d8918857c2fb3b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pageObjects.OauthRegistrationPage.fillOauthRegistrationForm(OauthRegistrationPage.java:35)
+	at steps.OauthRegisterationStepDefinition.user_fills_the_form_from_given_sheetname_and_rownumber(OauthRegisterationStepDefinition.java:44)
+	at ✽.user fills the form from given sheetname "OauthRegisteration" and rownumber 0(file:///C:/Users/ssais/git/CucumberSeleniumPOMDemo/CucumberSeleniumPOMDemo/src/test/resources/features/OauthRegisteration.feature:10)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user is on login page.................................................passed
-When user enters username "ssaisrinivas2" and password "$Ss9704312287"......passed
-And user clicks on Login button.............................................passed
-Then user gets the title of the account page................................passed
-And Account page title should be "Compare B2B Software, Download, & Develop Open Source & Business Software - SourceForge".failed
+Given user has already logged in to application.............................passed
+Given user navigates to OAuth2 page.........................................passed
+When user fills the form from given sheetname "OauthRegisteration" and rownumber 0.failed
+And user clicks on send button..............................................skipped
+Then it shows a successful message "OAuth2 Client registered"...............skipped
+]]></system-out>
+</testcase>
+<testcase classname="Register New OAuth2 Application Feature" name="Register New OAuth2 scenario with different set of data - #1.2" time="12.644">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@name='application_name'][@tabindex='6']&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0330d5210eadaed0e4f4ed012aefae0c, findElement {using=xpath, value=//input[@name='application_name'][@tabindex='6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49680}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49680/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0330d5210eadaed0e4f4ed012aefae0c">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='application_name'][@tabindex='6']"}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0330d5210eadaed0e4f4ed012aefae0c, findElement {using=xpath, value=//input[@name='application_name'][@tabindex='6']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\ssais\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49680}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49680/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0330d5210eadaed0e4f4ed012aefae0c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pageObjects.OauthRegistrationPage.fillOauthRegistrationForm(OauthRegistrationPage.java:35)
+	at steps.OauthRegisterationStepDefinition.user_fills_the_form_from_given_sheetname_and_rownumber(OauthRegisterationStepDefinition.java:44)
+	at ✽.user fills the form from given sheetname "OauthRegisteration" and rownumber 1(file:///C:/Users/ssais/git/CucumberSeleniumPOMDemo/CucumberSeleniumPOMDemo/src/test/resources/features/OauthRegisteration.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user has already logged in to application.............................passed
+Given user navigates to OAuth2 page.........................................passed
+When user fills the form from given sheetname "OauthRegisteration" and rownumber 1.failed
+And user clicks on send button..............................................skipped
+Then it shows a successful message "OAuth2 Client registered"...............skipped
 ]]></system-out>
 </testcase>
 </testsuite>
